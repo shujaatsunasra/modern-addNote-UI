@@ -1,6 +1,8 @@
 // Import Statements
 import 'package:beyou/features/notes/notes.dart';
 
+import 'features/notes/presentation/pages/home_page.dart';
+
 // Main Function
 void main() {
   runApp(const MyApp());
@@ -15,11 +17,20 @@ class MyApp extends StatelessWidget {
     // App Initialization
 
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.deepOrange,
-        ),
-        home: const MyHomePage());
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange,
+      ),
+      // home: NoteDetailPage(
+      //   note: Note(
+      //       title: 'Account Info',
+      //       description: 'email: sample@info.com\npass:newacc1290',
+      //       category: 'personal',
+      //       noteNumber: 1),
+      // ));
+
+      home: MyHomePage(),
+    );
   }
 }
 

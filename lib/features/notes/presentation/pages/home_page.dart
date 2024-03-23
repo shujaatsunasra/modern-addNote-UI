@@ -32,10 +32,10 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           // Handle profile icon click
         },
         onAddPressed: () {
-          _showAddNoteDialog(context);
+          //?detailed page navigation to be
         },
-        leftData: Icon(CupertinoIcons.person_fill),
-        RightData: Icon(CupertinoIcons.add),
+        leftData: const Icon(CupertinoIcons.person_fill),
+        RightData: const Icon(CupertinoIcons.add),
         centerwidget: ScaleTransition(
           scale: Tween<double>(
             begin: 1.0,
@@ -94,21 +94,33 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               itemBuilder: (context, index) {
                 if (notes.isEmpty) {
                   // If the list is empty, display a funny message
-                  return const Column(
+                  return Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      LineBreak(color: Colors.white70),
                       Padding(
-                        padding: EdgeInsets.all(16.0),
-                        child: Text(
-                          "/Your are going empty add your notes !",
-                          style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white70),
-                        ),
-                      ),
+                          padding: EdgeInsets.all(16.0),
+                          child: NotePreviewWidget(
+                            note: Note(
+                                title: 'Account Info',
+                                description:
+                                    'email: sample@info.com\npass:newacc1290',
+                                category: 'personal',
+                                noteNumber: 1),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => NoteDetailPage(
+                                        note: Note(
+                                            title: 'Account Info',
+                                            description:
+                                                'email: sample@info.com\npass:newacc1290',
+                                            category: 'personal',
+                                            noteNumber: 1)),
+                                  ));
+                            },
+                          )),
                       LineBreak(
                         color: Colors.white70,
                       )
@@ -135,74 +147,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           ),
         ],
       ),
-    );
-  }
-
-  // Function to show the add note dialog
-  Future<void> _showAddNoteDialog(BuildContext context) async {
-    TextEditingController titleController = TextEditingController();
-    TextEditingController descriptionController = TextEditingController();
-    TextEditingController categoryController = TextEditingController();
-    TextEditingController noteNumberController = TextEditingController();
-    DateTime selectedDate = DateTime.now();
-    TimeOfDay selectedTime = TimeOfDay.now();
-
-    await Navigator.push(
-      context,
-      MaterialPageRoute(
-          builder: (context) => Scaffold(
-                // Wrap with Scaffold
-                appBar: AppBar(
-                  title: Text('Add Note'),
-                ),
-                body: Column(
-                  children: [
-                    TextField(
-                        controller: titleController,
-                        decoration: InputDecoration(labelText: 'Title')),
-                    TextField(
-                        controller: descriptionController,
-                        decoration: InputDecoration(labelText: 'Description')),
-                    TextField(
-                        controller: categoryController,
-                        decoration: InputDecoration(labelText: 'Category')),
-                    TextField(
-                        controller: noteNumberController,
-                        decoration: InputDecoration(labelText: 'Note Number')),
-                    // Add widgets for date and time pickers
-                    ElevatedButton(
-                      onPressed: () {
-                        String title = titleController.text;
-                        String description = descriptionController.text;
-                        String category = categoryController.text;
-                        int noteNumber =
-                            int.tryParse(noteNumberController.text) ?? 0;
-
-                        Note newNote = Note(
-                          title: title,
-                          description: description,
-                          category: category,
-                          noteNumber: noteNumber,
-                        );
-
-                        setState(() {
-                          notes.add(newNote);
-                          if (!filterItems.contains(category)) {
-                            filterItems.add(category);
-                          }
-                        });
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => NoteDetailPage(note: newNote),
-                          ),
-                        );
-                      },
-                      child: Text('Save Note'),
-                    ),
-                  ],
-                ),
-              )),
     );
   }
 }

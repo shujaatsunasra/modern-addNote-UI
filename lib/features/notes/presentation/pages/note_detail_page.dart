@@ -84,26 +84,51 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
             ),
           ),
           const SizedBox(height: 45),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.7,
-              child: Column(
-                children: [
-                  EditableTextWidget(
+          Container(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.35,
+                  child: EditableTextWidget(
                     initialTitle: widget.note.title,
                     initialDescription: widget.note.description,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      _startListening();
-                    },
-                    child: Text('Start Voice Input'),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.35,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          _startListening();
+                        },
+                        child: Container(
+                            height: 50,
+                            width: 50,
+                            decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                                borderRadius: BorderRadius.circular(50)),
+                            child: const Center(
+                              child: Icon(
+                                CupertinoIcons.mic,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            )),
+                      ),
+                      const SizedBox(height: 20),
+
+                      Text('Voice Input: $voiceInput',
+                          style: GoogleFonts.poppins(
+                            color: Colors.black54,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 15,
+                          )), // Display real-time voice input
+                    ],
                   ),
-                  Text(
-                      'Voice Input: $voiceInput'), // Display real-time voice input
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 20),
@@ -131,7 +156,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
             voiceInput = result.recognizedWords ?? '';
           });
         },
-        listenFor: Duration(minutes: 5), // Set duration to 5 minutes
+        listenFor: const Duration(minutes: 5), // Set duration to 5 minutes
       );
     } else {
       print('Speech recognition not available');

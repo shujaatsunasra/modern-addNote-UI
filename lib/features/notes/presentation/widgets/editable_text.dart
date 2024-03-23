@@ -17,8 +17,8 @@ class EditableTextWidget extends StatefulWidget {
 }
 
 class _EditableTextWidgetState extends State<EditableTextWidget> {
-  TextEditingController _titleController = TextEditingController();
-  TextEditingController _descriptionController = TextEditingController();
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _descriptionController = TextEditingController();
   bool _isEditingTitle = false;
   bool _isEditingDescription = false;
 

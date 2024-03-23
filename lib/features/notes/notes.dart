@@ -18,8 +18,6 @@ export 'presentation/widgets/note_preview_widget.dart';
 
 export 'presentation/widgets/your_notes.dart';
 
-export 'presentation/pages/home_page.dart';
-
 export 'presentation/pages/note_detail_page.dart';
 
 export 'package:google_fonts/google_fonts.dart';
@@ -27,3 +25,5 @@ export 'package:google_fonts/google_fonts.dart';
 export 'presentation/widgets/editable_text.dart';
 
 export 'package:speech_to_text/speech_to_text.dart';
+
+export 'package:shared_preferences/shared_preferences.dart';
