@@ -1,14 +1,8 @@
-Certainly! Here's a sample surface-level information that you can include in your GitHub README.md file for your app:
-
----
-
 # Note App UI Flutter
 
-![WhatsApp Image 2024-03-23 at 1 12 09 PM](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/5d62e660-242d-497a-b8e1-1e517fbccfb4)
-![WhatsApp Image 2024-03-23 at 1 12 10 PM](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/48e68369-6c2d-4ab2-9828-aeba5d8c5ca4)
-![WhatsApp Image 2024-03-23 at 1 12 10 PM (1)](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/46f52147-3877-467c-a759-40463471f414)
-![WhatsApp Image 2024-03-23 at 1 12 11 PM](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/c245fd6e-b046-4895-83cd-ff34fbe3654f)
-
+| ![Screenshot 1](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot1.jpg) | ![Screenshot 2](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot2.jpg) |
+| --- | --- |
+| ![Screenshot 3](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot3.jpg) | ![Screenshot 4](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot4.jpg) |
 
 ## Description
 
@@ -41,5 +35,3 @@ To run the app locally, follow these steps:
 ## Contributions
 
 Contributions are welcome! If you have any feature suggestions, bug reports, or code improvements, feel free to open an issue or submit a pull request.
-
----
