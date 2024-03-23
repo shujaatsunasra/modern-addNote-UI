@@ -1,8 +1,10 @@
 # Note App UI Flutter
 
-| ![Screenshot 1](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot1.jpg) | ![Screenshot 2](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot2.jpg) |
+|![WhatsApp Image 2024-03-23 at 1 12 09 PM](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/85bdeb6c-9f37-46c8-8871-7f76a8e94ac5) | ![WhatsApp Image 2024-03-23 at 1 12 10 PM](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/b6db73e1-f060-45f8-9dc7-3dbba9333f34)|
 | --- | --- |
-| ![Screenshot 3](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot3.jpg) | ![Screenshot 4](https://github.com/shujaatsunasra/modern-addNote-UI/assets/screenshot4.jpg) |
+| ![WhatsApp Image 2024-03-23 at 1 12 10 PM (1)](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/86547321-e9a2-4933-bb5c-5b87beef67bb)
+ | ![WhatsApp Image 2024-03-23 at 1 12 11 PM](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/3b0024ef-9ccc-4eb6-bdc6-ae33992c51aa)
+ |
 
 ## Description
 
