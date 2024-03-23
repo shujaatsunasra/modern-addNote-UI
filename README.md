@@ -1,11 +1,8 @@
 # Note App UI Flutter
-| Light                                          | Dark                                           |
-| --------------------------------------------- | ---------------------------------------------- |
-| <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/1.png" width="300">  | <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/2.png" width="300">  |
-| <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/3.png" width="300">  | <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/4.png" width="300">  |
-| <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/5.png" width="300">  | <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/6.png" width="300">  |
-| <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/7.png" width="300">  | <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/8.png" width="300">  |
-| <img src="https://github.com/shujaatsunasra/modern-addNote-UI/assets/ss/9.png" width="300">  | <img src="https://github.com/shujaats
+
+| Screenshot 1                    | Screenshot 2                    | Screenshot 3                    | Screenshot 4                    |
+| --------------------------------- | --------------------------------- | --------------------------------- | --------------------------------- |
+| ![Screenshot 1](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/85bdeb6c-9f37-46c8-8871-7f76a8e94ac5) | ![Screenshot 2](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/b6db73e1-f060-45f8-9dc7-3dbba9333f34) | ![Screenshot 3](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/86547321-e9a2-4933-bb5c-5b87beef67bb) | ![Screenshot 4](https://github.com/shujaatsunasra/modern-addNote-UI/assets/142157275/3b0024ef-9ccc-4eb6-bdc6-ae33992c51aa) |
 
 
 
